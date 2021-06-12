@@ -2,28 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  Get insights that help your business grow.
+<div class="content">
+  <div class="card card-background mobile mobile-card">
+    <div class="img-overlay"></div>
+    <img src="images/image-header-mobile.jpg" alt="Ladies working happily in the office.">
+  </div>
+  <div class="card left-card">
+    <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+      experience, and overall efficiency.</p>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+    <div class="stats">
+      <div class="stat-box">
+        <div class="stat">10k+</div>
+        <div class="stat-heading">companies</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat">314</div>
+        <div class="stat-heading">templates</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat">12M+</div>
+        <div class="stat-heading">queries</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="card card-background desktop stretch-width">
+    <div class="img-overlay"></div>
+    <img src="images/image-header-desktop.jpg" alt="Ladies working happily in the office.">
+  </div>
+</div>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
